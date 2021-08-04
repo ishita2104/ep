@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="view-port" content="width=device-width,initial-scale=1.0">
+	<title>CUPPIES</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="header">
+	<div class="container">
+		<div class="navbar">
+			<div class="logo">
+				<img src="logo.jpeg" width="125px">
+		</div>
+	<nav>
+		<ul id="menuitems">
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="product.html">CAKES</a></li>
+			<li><a href="sides.html">SIDES</a></li>
+			<li><a href="#contact">CONTACT</a></li>
+			<li><a href="account.html">LOGIN</a></li>
+		</ul>
+	</nav>
+	<a href="cart.html"><img src="https://cdn4.iconfinder.com/data/icons/essential-elements-1/100/shopping-cart-512.png" width="30px" height="30px"></a>
+	<img src="https://cdn4.iconfinder.com/data/icons/mobile-app-navigation-line-style/32/Hamburger_Menu-512.png" height="30px" class="menu-icon" onclick="menutoggle()">
+	</div>
+
+	<!----------------------single product details------------------------->
+	<div class="small-container single-product">
+		<div class="row">
+			<div class="col-2">
+				<img src="cake10.jpeg" width="100%" height="100%" id="productImg">
+
+				<!--<div class="small-img-row">
+					<div class="small-img-col">
+						<img src="images/1.jpg" width="100%" height="100%" class="small-img">
+					</div>
+					<div class="small-img-col">
+						<img src="images/1a.jpg" width="100%" height="100%" class="small-img">
+					</div>
+					<div class="small-img-col">
+						<img src="images/1b.jpg" width="100%" height="100%" class="small-img">
+					</div>
+					<div class="small-img-col">
+						<img src="images/1c.jpg" width="100%" height="100%" class="small-img">
+					</div>
+					
+				</div>!-->
+
+			</div>
+			<div class="col-2">
+				<p>Home / chocolate</p>
+				<h1>Chocolate Cake</h1>
+				<h4>Rs. 250.00</h4>
+				<select>
+					<option>Select KG</option>
+					<option>0.5 KG</option>
+					<option>1 KG</option>
+					<option>1.5 KG</option>
+					<option>2 KG</option>
+				</select>
+				<input type="number" value="1">
+				<a href="" class="btn">Add to Cart</a>
+				<h3>Product Details <i class="fa fa-ident"></i></h3><br>
+				<p>Cake Flavour- Chocolate<br>Serves- 4-6 People</p>
+				<p>The cake stand, cutlery & accessories used in the image are only for representation purposes.They are not delivered with the cake.<br>This cake is hand delivered in a good quality cardboard box.<br>Country of Origin: India</p>
+				
+			</div>
+		</div>
+		</div>
+
+	</div>
+
+	<!------------------------title------>
+
+<!-----------------------------js for product galery----------------->
+<script>
+	var productImg=document.getElementById("productImg");
+	var smallimg =document.getElementsByClassName("small-img");
+
+	smallimg[0].onclick =funtion()
+	{
+		productImg.src=smallimg[0].src;
+	}
+	smallimg[1].onclick=funtion()
+	{
+		productImg.src=smallimg[1].src;
+	}
+	smallimg[2].onclick=funtion()
+	{
+		productImg.src=smallimg[2].src;
+	}
+	smallimg[3].onclick=funtion()
+	{
+		productImg.src=smallimg[3].src;
+	}
+</script>
+
+
+<div class="footer" id="contact">
+	<div class="container">
+		<div class="row">
+			<div class="footer-col-1">
+				<h3>Cuppies</h3>
+				<p>Now Online</p>
+			</div>
+			<div class="footer-col-2">
+				<img src="logo.jpeg">
+				
+			</div>
+			<div class="footer-col-3">
+				<b>timings:</b><br>
+				 08:00 to 18:30 Hrs.<br>
+				 <b>Call Us:</b><br>
+				 96823958959<br>
+				 <b>Email</b><br>
+				 <a href="mailto:mahaz960@gmail.com">mahaz960@gmail.com</a>
+			</div>
+			<div class="footer-col-4">
+				<h3>DELIVERY AVAILABLE:</h3>
+				<ul>
+				<li>kamanahalli</li>
+				<li>babuspalya</li>
+				<li>henur</li>
+				<li>kalyan nagar</li>
+				</ul>
+			</div>
+		</div>
+		<hr>
+		<p class="copyright">cuppies website</p>
+	
+	</div>
+</div>
+
+<!----toggle menu--->
+<script type="text/javascript">
+	var menuitems=document.getElementById("menuitems");
+	menuitems.style.maxHeight="0px";
+	function menutoggle(){
+		if(menuitems.style.maxHeight=="0px"){
+			menuitems.style.maxHeight="200px";
+		}
+		else{
+			menuitems.style.maxHeight="0px"
+		}
+	}
+</script>
+
+
+</body>
+</html>
